@@ -1,0 +1,37 @@
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container > .messages-list {
+  flex-grow: 1;
+}
+
+.container > .messages-list > .message {
+  background-color: blue;
+  margin: 1rem;
+  width: 75%;
+}
+
+.container > .messages-list > .message.mine {
+  margin-left: auto;
+}
+
+.container > .input-section {
+  width: 100%;
+  height: 4rem;
+  display: flex;
+}
+
+.container > .input-section > textarea {
+  flex-grow: 1;
+}
+
+.container > .input-section > button {
+  box-sizing: border-box;
+  width: 3rem;
+  margin: .5rem;
+  border: none;
+  border-radius: 50rem;
+}

@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="messages-list">
+    <div
+      *ngFor="let message of messages"
+      class="message"
+      [ngClass]="{ 'mine': message.sender === currentUserId }"
+    >{{ message.text }}
+    {{ message.sender === currentUserId }}
+    {{ message.sender }}
+    {{ currentUserId }}</div>
+  </div>
+  <div class="input-section">
+    <textarea rows="3"></textarea>
+    <button><fa-icon [icon]="faPaperPlane"></fa-icon></button>
+  </div>
+</div>
