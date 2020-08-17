@@ -12,7 +12,7 @@ import { LoginService } from './login.service';
     FormsModule,
   ],
   exports: [
-    LoginComponent
+    LoginComponent,
   ],
   providers: [
     LoginService,

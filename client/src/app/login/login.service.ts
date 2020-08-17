@@ -3,9 +3,7 @@ import { Injectable } from '@angular/core';
 import { UserService } from '../user.service';
 import { Router } from '@angular/router';
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable()
 export class LoginService {
   // private _isLoggedIn = false;
   private _isLoggedIn = true;
